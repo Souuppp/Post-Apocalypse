@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqcb7pq3005nm"]
+
+[ext_resource type="Script" uid="uid://fgdw5gcppf3" path="res://Main Characters Sprites/player.gd" id="1_j4kuv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_25hyu"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_l4htb"]
+
+[node name="player" type="CharacterBody2D"]
+script = ExtResource("1_j4kuv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_25hyu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_l4htb")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
