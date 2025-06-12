@@ -1,6 +1,6 @@
 extends Area2D
 
-var directon = 1
+var direction = 1
 
 func _ready():
 	pass
