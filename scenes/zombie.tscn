@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://dcm42amey3rsb"]
+
+[ext_resource type="Script" uid="uid://evlbrryyrodk" path="res://scripts/zombie.gd" id="1_httt1"]
+[ext_resource type="Texture2D" path="res://Sprites/Enemies/2D-PLATFORMER-ZOMBIE-/zombie-stand-up-1-outline.png" id="2_xepks"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sojix"]
+radius = 13.0384
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4gx57"]
+atlas = ExtResource("2_xepks")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sjhde"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4gx57")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Zombie" type="Area2D"]
+script = ExtResource("1_httt1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_sojix")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -2)
+scale = Vector2(1, 0.9375)
+sprite_frames = SubResource("SpriteFrames_sjhde")
+
+[node name="Timer" type="Timer" parent="." groups=["hurt"]]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
