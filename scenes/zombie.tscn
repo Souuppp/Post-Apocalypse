@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://od20i2mea4yy"]
+[gd_scene load_steps=29 format=3 uid="uid://p66myyfdunma"]
 
 [ext_resource type="Script" uid="uid://evlbrryyrodk" path="res://Scripts/zombie.gd" id="1_httt1"]
 [ext_resource type="Texture2D" uid="uid://b40q8j1a2wsbx" path="res://assets/2D-PLATFORMER-ZOMBIE-/zombie-stand-up-1-outline.png" id="2_4gx57"]
@@ -173,6 +173,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4gx57"]
+size = Vector2(1682, 19)
+
 [node name="Zombie" type="Area2D"]
 script = ExtResource("1_httt1")
 
@@ -180,7 +183,7 @@ script = ExtResource("1_httt1")
 shape = SubResource("CircleShape2D_sojix")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -2)
+position = Vector2(1, -2)
 scale = Vector2(1, 0.9375)
 sprite_frames = SubResource("SpriteFrames_sjhde")
 animation = &"walking"
@@ -189,5 +192,9 @@ autoplay = "default"
 [node name="Timer" type="Timer" parent="." groups=["hurt"]]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(315, 23.5)
+shape = SubResource("RectangleShape2D_4gx57")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
