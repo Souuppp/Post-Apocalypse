@@ -1,9 +1,9 @@
 extends CharacterBody2D
 
 const SPEED := 200.0
-const JUMP_FORCE := -350.0
+const JUMP_FORCE := -340.0
 const GRAVITY := 1000.0
-const MAX_JUMPS := 2
+const MAX_JUMPS := 1
 
 var jumps_left := MAX_JUMPS
 var is_attacking := false

@@ -1,8 +1,9 @@
-[gd_scene load_steps=20 format=4 uid="uid://dqttwp2j1j0p6"]
+[gd_scene load_steps=21 format=4 uid="uid://s6v5qsrj0wt5"]
 
 [ext_resource type="Texture2D" uid="uid://k256agaieqv" path="res://assets/Sidescroller Shooter - Central City/Assets/Buildings.png" id="1_4l0p2"]
 [ext_resource type="Texture2D" uid="uid://y83dg2nfqu5n" path="res://assets/Sidescroller Shooter - Central City/Assets/Props-01.png" id="2_qgkg2"]
 [ext_resource type="Texture2D" uid="uid://bf00kqnqdhim7" path="res://assets/Sidescroller Shooter - Central City/Assets/Tiles.png" id="3_3wrru"]
+[ext_resource type="PackedScene" uid="uid://dfhq5urolj1ou" path="res://Scenes/player.tscn" id="4_4l0p2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b6df7"]
 texture = ExtResource("1_4l0p2")
@@ -1886,3 +1887,6 @@ tile_set = SubResource("TileSet_ulpju")
 [node name="TileMapLayer4" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAAZACUAAQADAAAAAAAZACYAAQADAAEAAAAaACUAAQAEAAAAAAAaACYAAQAEAAEAAAAYACYAAQACAAQAAAAcACYAAQACAAQAAAATACYAAQADAAEAAAATACUAAQADAAAAAAAUACUAAQAEAAAAAAAUACYAAQAEAAEAAAA=")
 tile_set = SubResource("TileSet_3wrru")
+
+[node name="Player" parent="." instance=ExtResource("4_4l0p2")]
+position = Vector2(206, 606)
