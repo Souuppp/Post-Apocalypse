@@ -6,6 +6,7 @@
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bujhn"]
 
 [node name="Letter_Post" type="Area2D"]
+collision_layer = 8
 script = ExtResource("1_bujhn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -14,3 +15,5 @@ shape = SubResource("CapsuleShape2D_bujhn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_ejvsw")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
