@@ -6,7 +6,9 @@
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bujhn"]
 
 [node name="Letter_Post" type="Area2D"]
-collision_layer = 8
+light_mask = 8
+visibility_layer = 8
+collision_layer = 2
 script = ExtResource("1_bujhn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
