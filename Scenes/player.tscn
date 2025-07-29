@@ -163,5 +163,6 @@ animation = &"Idle"
 shape = SubResource("CapsuleShape2D_l4htb")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -77.435)
 zoom = Vector2(2.5, 2.5)
 position_smoothing_enabled = true
