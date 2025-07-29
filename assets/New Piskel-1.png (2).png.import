@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://k256agaieqv"
-path="res://.godot/imported/Buildings.png-7fe2f1f5c986e9ded3c479afe7ed711b.ctex"
+uid="uid://cw1wrbg8fun05"
+path="res://.godot/imported/New Piskel-1.png (2).png-06bb831ce4af2f6d1bd7a44b63517b91.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sidescroller Shooter - Central City/Assets/Buildings.png"
-dest_files=["res://.godot/imported/Buildings.png-7fe2f1f5c986e9ded3c479afe7ed711b.ctex"]
+source_file="res://assets/New Piskel-1.png (2).png"
+dest_files=["res://.godot/imported/New Piskel-1.png (2).png-06bb831ce4af2f6d1bd7a44b63517b91.ctex"]
 
 [params]
 
