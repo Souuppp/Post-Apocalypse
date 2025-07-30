@@ -3,28 +3,19 @@
 [ext_resource type="Script" uid="uid://dls4l2llqj1vn" path="res://door.gd" id="1_p0e35"]
 [ext_resource type="Texture2D" uid="uid://cw1wrbg8fun05" path="res://assets/New Piskel-1.png (2).png" id="2_fahql"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ab4ky"]
-size = Vector2(20, 23)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p0e35"]
+size = Vector2(16.8421, 31.1579)
 
 [node name="Door" type="CharacterBody2D"]
 script = ExtResource("1_p0e35")
 
-[node name="NewPiskel-1_png(2)" type="Sprite2D" parent="."]
+[node name="Doorthing" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-4, -1)
+position = Vector2(-1, 0)
+scale = Vector2(1.1875, 1.1875)
 texture = ExtResource("2_fahql")
 
-[node name="Area2D" type="Area2D" parent="."]
-light_mask = 128
-visibility_layer = 128
-collision_layer = 128
-collision_mask = 128
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-light_mask = 8
-visibility_layer = 8
-position = Vector2(0, 1.5)
-shape = SubResource("RectangleShape2D_ab4ky")
-
-[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
-[connection signal="area_shape_entered" from="Area2D" to="." method="_on_area_2d_area_shape_entered"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doorthing"]
+position = Vector2(3.36842, 0.842105)
+shape = SubResource("RectangleShape2D_p0e35")
+debug_color = Color(4.90934e-06, 0.587847, 0.659323, 0.42)
