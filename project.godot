@@ -21,7 +21,7 @@ MenuTemplateManager="*res://addons/EasyMenus/Scripts/menu_template_manager.gd"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/AS2P/plugin.cfg")
+enabled=PackedStringArray("res://addons/AS2P/plugin.cfg", "res://addons/parallax_node/plugin.cfg")
 
 [input]
 
