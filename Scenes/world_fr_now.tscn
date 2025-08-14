@@ -1980,3 +1980,6 @@ position = Vector2(1087, 161)
 
 [node name="Node2D" parent="." instance=ExtResource("7_eqfkm")]
 position = Vector2(5, 520)
+
+[node name="Zombie(Basic)" parent="." instance=ExtResource("7_eqfkm")]
+position = Vector2(764, 304)
