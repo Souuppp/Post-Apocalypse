@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://oodhl0vinbbk"
-path="res://.godot/imported/Letter - Post Apocalypse Sprite-1.png (1).png-9f015e0a7b1e5f1509121cfb694013ab.ctex"
+uid="uid://bskyhvs366aax"
+path="res://.godot/imported/Buildings.png-7fe2f1f5c986e9ded3c479afe7ed711b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Objects/Letter - Post Apocalypse Sprite-1.png (1).png"
-dest_files=["res://.godot/imported/Letter - Post Apocalypse Sprite-1.png (1).png-9f015e0a7b1e5f1509121cfb694013ab.ctex"]
+source_file="res://assets/Sidescroller Shooter - Central City/Assets/Buildings.png"
+dest_files=["res://.godot/imported/Buildings.png-7fe2f1f5c986e9ded3c479afe7ed711b.ctex"]
 
 [params]
 
