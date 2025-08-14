@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://e0fdvpu8ol2k"]
+[gd_scene load_steps=3 format=3 uid="uid://e0fdvpu8ol2k"]
 
 [ext_resource type="Script" uid="uid://do1jqvxwkx7wq" path="res://Scripts/letter_post.gd" id="1_bujhn"]
-[ext_resource type="Texture2D" uid="uid://oodhl0vinbbk" path="res://Objects/Letter - Post Apocalypse Sprite-1.png (1).png" id="1_ejvsw"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bujhn"]
 
@@ -16,6 +15,5 @@ rotation = 1.5708
 shape = SubResource("CapsuleShape2D_bujhn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_ejvsw")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

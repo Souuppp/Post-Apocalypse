@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cw52uxlixmgkt"
-path="res://.godot/imported/Letter - Post Apocalypse Sprite-1.png.png-1f2d47cf71997094cf15ea4d25bb3d04.ctex"
+uid="uid://cvecmk4j26wxj"
+path="res://.godot/imported/EasyMenusLogo.png-7935d32dea2e4567629690f71e130937.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Objects/Letter - Post Apocalypse Sprite-1.png.png"
-dest_files=["res://.godot/imported/Letter - Post Apocalypse Sprite-1.png.png-1f2d47cf71997094cf15ea4d25bb3d04.ctex"]
+source_file="res://assets/EasyMenusLogo.png"
+dest_files=["res://.godot/imported/EasyMenusLogo.png-7935d32dea2e4567629690f71e130937.ctex"]
 
 [params]
 
