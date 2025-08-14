@@ -1,9 +1,10 @@
-[gd_scene load_steps=26 format=4 uid="uid://dqttwp2j1j0p6"]
+[gd_scene load_steps=27 format=4 uid="uid://dqttwp2j1j0p6"]
 
 [ext_resource type="PackedScene" uid="uid://dfhq5urolj1ou" path="res://Scenes/player.tscn" id="4_22dce"]
 [ext_resource type="Texture2D" uid="uid://bgcyv64bgqtp6" path="res://assets/WCP_1.png" id="5_ywhmv"]
 [ext_resource type="Texture2D" uid="uid://cufctmlmquyve" path="res://assets/WCP_2.png" id="6_ghpm4"]
 [ext_resource type="Texture2D" uid="uid://cwpt45ckeb20q" path="res://assets/WCP_3.png" id="7_an4fb"]
+[ext_resource type="PackedScene" uid="uid://2ya5pgngu7ia" path="res://Scenes/Enemy(Basic Zombie).tscn" id="7_eqfkm"]
 [ext_resource type="Texture2D" uid="uid://33sykye3seyd" path="res://assets/WCP_5.png" id="8_mqu4y"]
 [ext_resource type="PackedScene" uid="uid://b5ud8ilh0kahb" path="res://Scenes/door.tscn" id="9_b4gm2"]
 
@@ -1976,3 +1977,6 @@ centered = false
 
 [node name="Door" parent="." instance=ExtResource("9_b4gm2")]
 position = Vector2(1087, 161)
+
+[node name="Node2D" parent="." instance=ExtResource("7_eqfkm")]
+position = Vector2(5, 520)

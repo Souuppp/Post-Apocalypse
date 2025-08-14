@@ -1,5 +1,6 @@
-[gd_scene load_steps=36 format=3 uid="uid://2ya5pgngu7ia"]
+[gd_scene load_steps=37 format=3 uid="uid://2ya5pgngu7ia"]
 
+[ext_resource type="Script" uid="uid://cqlti1ot3bq34" path="res://Scenes/enemy(basic_zombie).gd" id="1_jy0o0"]
 [ext_resource type="Texture2D" uid="uid://bj0f1ckvdvxjk" path="res://assets/zombie-attack-1-outline.png" id="1_k8ekl"]
 [ext_resource type="Texture2D" uid="uid://b14xply2cncf3" path="res://assets/zombie-death-1-outline.png" id="2_jy0o0"]
 [ext_resource type="Texture2D" uid="uid://dgtqk7d2ex8kl" path="res://assets/zombie-stand-up-1-outline.png" id="3_udcfd"]
@@ -233,7 +234,9 @@ animations = [{
 "speed": 8.0
 }]
 
-[node name="Node2D" type="Area2D"]
+[node name="Zombie(Basic)" type="Area2D" groups=["Hurt"]]
+script = ExtResource("1_jy0o0")
+flip_time = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(1.00525, 1)
@@ -241,5 +244,9 @@ shape = SubResource("CapsuleShape2D_bvp3m")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_s3m5j")
-animation = &"Attack"
-frame_progress = 0.399048
+animation = &"Walking"
+autoplay = "Walking"
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
