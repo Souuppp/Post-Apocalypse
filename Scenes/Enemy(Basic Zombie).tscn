@@ -9,16 +9,16 @@
 script/source = "extends CharacterBody2D
 
 var direction = 1
-const SPEED = 300.0
+const SPEED = 50.0
 const JUMP_VELOCITY = -400.0
 
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
-		velocity += get_gravity() * delta
+		velocity.y= get_gravity().y * delta
 		
-		velocity.x = direction * SPEED
+	velocity.x = direction * SPEED
 
 	# Handle jump.
 	
@@ -32,10 +32,8 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_timer_timeout() -> void:
-	direction = direction * -1
+	direction = -direction
 "
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bvp3m"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7ilkn"]
 atlas = ExtResource("1_k8ekl")
@@ -263,18 +261,26 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bvp3m"]
+
 [node name="Zombie(Basic)" type="CharacterBody2D" groups=["Hurt"]]
+texture_filter = 1
 script = SubResource("GDScript_k8ekl")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-scale = Vector2(1.00525, 1)
-shape = SubResource("CapsuleShape2D_bvp3m")
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_s3m5j")
 animation = &"Walking"
 autoplay = "Walking"
+frame_progress = 0.190298
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+scale = Vector2(1, 0.995)
+shape = SubResource("CapsuleShape2D_bvp3m")
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
