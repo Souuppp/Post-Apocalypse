@@ -1103,4 +1103,4 @@ centered = false
 position = Vector2(1087, 161)
 
 [node name="Zombie(Basic)" parent="." instance=ExtResource("7_eqfkm")]
-position = Vector2(20, 513)
+position = Vector2(30, 512)
