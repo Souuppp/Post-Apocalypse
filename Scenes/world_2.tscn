@@ -1,5 +1,8 @@
 [gd_scene load_steps=28 format=4 uid="uid://27pgwt4t8jt7"]
 
+[ext_resource type="Texture2D" uid="uid://bskyhvs366aax" path="res://assets/Sidescroller Shooter - Central City/Assets/Buildings.png" id="1_wa2kw"]
+[ext_resource type="Texture2D" uid="uid://jckduuxb3hvp" path="res://assets/Sidescroller Shooter - Central City/Assets/Props-01.png" id="2_ico85"]
+[ext_resource type="Texture2D" uid="uid://ce03s6yvfrt4y" path="res://assets/Sidescroller Shooter - Central City/Assets/Tiles.png" id="3_hpuos"]
 [ext_resource type="PackedScene" uid="uid://dfhq5urolj1ou" path="res://Scenes/player.tscn" id="4_6uuwl"]
 [ext_resource type="Texture2D" uid="uid://bgcyv64bgqtp6" path="res://assets/WCP_1.png" id="5_tmly8"]
 [ext_resource type="PackedScene" uid="uid://c7lcl05yyn2b2" path="res://Scenes/door2.tscn" id="6_4i21e"]
@@ -7,11 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://cwpt45ckeb20q" path="res://assets/WCP_3.png" id="7_ico85"]
 [ext_resource type="Texture2D" uid="uid://33sykye3seyd" path="res://assets/WCP_5.png" id="8_hpuos"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6kl5w"]
-load_path = "res://.godot/imported/Buildings.png-3add49cb1663e14333ce9f872ffee255.ctex"
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rcwnu"]
-texture = SubResource("CompressedTexture2D_6kl5w")
+texture = ExtResource("1_wa2kw")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -77,10 +77,10 @@ texture = SubResource("CompressedTexture2D_6kl5w")
 7:2/0 = 0
 8:2/0 = 0
 9:2/0 = 0
-9:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0.539577, 8, 0.719435, 8, 5.93534, -8, 6.1152)
+9:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 2.15831, 8, 2.33816, 8, 8, -8, 8)
 9:2/0/physics_layer_0/polygon_0/one_way = true
 10:2/0 = 0
-10:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0.539577, 8, 0.719435, 8, 5.93534, -8, 6.1152)
+10:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 2.15831, 8, 2.33816, 8, 8, -8, 8)
 10:2/0/physics_layer_0/polygon_0/one_way = true
 11:2/0 = 0
 12:2/0 = 0
@@ -125,7 +125,6 @@ texture = SubResource("CompressedTexture2D_6kl5w")
 4:4/0 = 0
 4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:4/0 = 0
-5:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:4/0 = 0
 7:4/0 = 0
 8:4/0 = 0
@@ -236,13 +235,13 @@ texture = SubResource("CompressedTexture2D_6kl5w")
 20:8/0 = 0
 21:8/0 = 0
 22:8/0 = 0
-22:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.25901, 8, 1.25901, 8, 4.67633, 8, 4.85619, -8, 5.03605)
+22:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 2.15831, 8, 2.33816, 8, 8, -8, 8)
 22:8/0/physics_layer_0/polygon_0/one_way = true
 23:8/0 = 0
-23:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.25901, 8, 1.25901, 8, 4.67633, 8, 4.85619, -8, 5.03605)
+23:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 2.15831, 8, 2.33816, 8, 8, -8, 8)
 23:8/0/physics_layer_0/polygon_0/one_way = true
 24:8/0 = 0
-24:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.25901, 8, 1.25901, 8, 4.67633, 8, 4.85619, -8, 5.03605)
+24:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 2.15831, 8, 2.33816, 8, 8, -8, 8)
 24:8/0/physics_layer_0/polygon_0/one_way = true
 0:9/0 = 0
 1:9/0 = 0
@@ -318,11 +317,8 @@ texture = SubResource("CompressedTexture2D_6kl5w")
 1:14/0 = 0
 2:14/0 = 0
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_eqfkm"]
-load_path = "res://.godot/imported/Props-01.png-ac064426e16cbb3fb7d222d5c261537d.ctex"
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ls4ps"]
-texture = SubResource("CompressedTexture2D_eqfkm")
+texture = ExtResource("2_ico85")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -410,33 +406,38 @@ texture = SubResource("CompressedTexture2D_eqfkm")
 1:11/0 = 0
 2:11/0 = 0
 5:11/0 = 0
+5:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:11/0 = 0
+6:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:11/0 = 0
+7:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 0:12/0 = 0
 1:12/0 = 0
 2:12/0 = 0
 3:12/0 = 0
 4:12/0 = 0
 5:12/0 = 0
+5:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:12/0 = 0
+6:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:12/0 = 0
+7:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 0:13/0 = 0
 1:13/0 = 0
 2:13/0 = 0
 3:13/0 = 0
 4:13/0 = 0
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qvgfr"]
-load_path = "res://.godot/imported/Tiles.png-91bd3a35757e87776bc383a5edf2b98f.ctex"
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w7ptl"]
-texture = SubResource("CompressedTexture2D_qvgfr")
+texture = ExtResource("3_hpuos")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:0/0 = 0
 5:0/0 = 0
 0:1/0 = 0
@@ -496,7 +497,7 @@ sources/1 = SubResource("TileSetAtlasSource_ls4ps")
 sources/2 = SubResource("TileSetAtlasSource_w7ptl")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_21kcj"]
-texture = SubResource("CompressedTexture2D_6kl5w")
+texture = ExtResource("1_wa2kw")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -710,13 +711,13 @@ texture = SubResource("CompressedTexture2D_6kl5w")
 20:8/0 = 0
 21:8/0 = 0
 22:8/0 = 0
-22:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 2.33816, 8, 2.15831, 8, 8, -8, 8)
+22:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.61873, 8, 1.79859, 8, 8, -8, 8)
 22:8/0/physics_layer_0/polygon_0/one_way = true
 23:8/0 = 0
-23:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 2.33816, 8, 2.15831, 8, 8, -8, 8)
+23:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.61873, 8, 1.79859, 8, 8, -8, 8)
 23:8/0/physics_layer_0/polygon_0/one_way = true
 24:8/0 = 0
-24:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 2.33816, 8, 2.15831, 8, 8, -8, 8)
+24:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.61873, 8, 1.79859, 8, 8, -8, 8)
 24:8/0/physics_layer_0/polygon_0/one_way = true
 0:9/0 = 0
 1:9/0 = 0
@@ -793,7 +794,7 @@ texture = SubResource("CompressedTexture2D_6kl5w")
 2:14/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0sdjl"]
-texture = SubResource("CompressedTexture2D_eqfkm")
+texture = ExtResource("2_ico85")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -861,17 +862,9 @@ texture = SubResource("CompressedTexture2D_eqfkm")
 5:8/0 = 0
 6:8/0 = 0
 0:9/0 = 0
-0:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-0:9/0/physics_layer_0/polygon_0/one_way = true
 1:9/0 = 0
-1:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-1:9/0/physics_layer_0/polygon_0/one_way = true
 2:9/0 = 0
-2:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-2:9/0/physics_layer_0/polygon_0/one_way = true
 3:9/0 = 0
-3:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-3:9/0/physics_layer_0/polygon_0/one_way = true
 5:9/0 = 0
 6:9/0 = 0
 0:10/0 = 0
@@ -902,7 +895,7 @@ texture = SubResource("CompressedTexture2D_eqfkm")
 4:13/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2ujam"]
-texture = SubResource("CompressedTexture2D_qvgfr")
+texture = ExtResource("3_hpuos")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -966,17 +959,12 @@ sources/1 = SubResource("TileSetAtlasSource_0sdjl")
 sources/2 = SubResource("TileSetAtlasSource_2ujam")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dak4q"]
-texture = SubResource("CompressedTexture2D_6kl5w")
+texture = ExtResource("1_wa2kw")
 0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
-1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:0/0 = 0
-2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:0/0 = 0
-3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:0/0 = 0
-4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:0/0 = 0
 6:0/0 = 0
 7:0/0 = 0
@@ -1066,17 +1054,11 @@ texture = SubResource("CompressedTexture2D_6kl5w")
 21:3/0 = 0
 22:3/0 = 0
 0:4/0 = 0
-0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:4/0 = 0
-1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:4/0 = 0
-2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:4/0 = 0
-3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:4/0 = 0
-4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:4/0 = 0
-5:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:4/0 = 0
 7:4/0 = 0
 8:4/0 = 0
@@ -1264,7 +1246,7 @@ texture = SubResource("CompressedTexture2D_6kl5w")
 2:14/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5labd"]
-texture = SubResource("CompressedTexture2D_eqfkm")
+texture = ExtResource("2_ico85")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1332,13 +1314,9 @@ texture = SubResource("CompressedTexture2D_eqfkm")
 5:8/0 = 0
 6:8/0 = 0
 0:9/0 = 0
-0:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(0.179859, -8, 8, -8, 8, -5.39576, 2.33816, -5.39576, 1.25901, -3.0576, -1.97845, -3.0576, -1.97845, -5.2159)
 1:9/0 = 0
-1:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -2.87774, -8, -2.87774)
 2:9/0 = 0
-2:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -2.87774, -8, -2.87774)
 3:9/0 = 0
-3:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -2.87774, -8, -2.87774)
 5:9/0 = 0
 6:9/0 = 0
 0:10/0 = 0
@@ -1352,22 +1330,16 @@ texture = SubResource("CompressedTexture2D_eqfkm")
 1:11/0 = 0
 2:11/0 = 0
 5:11/0 = 0
-5:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.1152, -3.59717, 8, -3.59717, 8, 8, -6.1152, 8)
 6:11/0 = 0
-6:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -3.77703, 8, -3.59717, 8, 8, -8, 8)
 7:11/0 = 0
-7:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.1152, -3.59717, 8, -3.59717, 8, 8, -6.1152, 8)
 0:12/0 = 0
 1:12/0 = 0
 2:12/0 = 0
 3:12/0 = 0
 4:12/0 = 0
 5:12/0 = 0
-5:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.1152, -8, 8, -8, 8, 3.0576, -5.57562, 2.87774)
 6:12/0 = 0
-6:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 3.0576, -8, 2.69788)
 7:12/0 = 0
-7:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 5.57562, -8, 5.39576, 2.87774, -8, 3.0576)
 0:13/0 = 0
 1:13/0 = 0
 2:13/0 = 0
@@ -1375,7 +1347,7 @@ texture = SubResource("CompressedTexture2D_eqfkm")
 4:13/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cvh3s"]
-texture = SubResource("CompressedTexture2D_qvgfr")
+texture = ExtResource("3_hpuos")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1439,7 +1411,7 @@ sources/1 = SubResource("TileSetAtlasSource_5labd")
 sources/2 = SubResource("TileSetAtlasSource_cvh3s")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tmly8"]
-texture = SubResource("CompressedTexture2D_6kl5w")
+texture = ExtResource("1_wa2kw")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1726,7 +1698,7 @@ texture = SubResource("CompressedTexture2D_6kl5w")
 2:14/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wa2kw"]
-texture = SubResource("CompressedTexture2D_eqfkm")
+texture = ExtResource("2_ico85")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1827,7 +1799,7 @@ texture = SubResource("CompressedTexture2D_eqfkm")
 4:13/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ico85"]
-texture = SubResource("CompressedTexture2D_qvgfr")
+texture = ExtResource("3_hpuos")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
