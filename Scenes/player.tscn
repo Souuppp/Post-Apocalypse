@@ -1,6 +1,6 @@
 [gd_scene load_steps=21 format=3 uid="uid://dfhq5urolj1ou"]
 
-[ext_resource type="Script" uid="uid://c1fkgcny2n4xe" path="res://Scripts/player.gd" id="1_v0iea"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_v0iea"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v0iea"]
 load_path = "res://.godot/imported/image (2) (1).png-f97e373fe90cdfbbd113d9aa85d4c776.ctex"
