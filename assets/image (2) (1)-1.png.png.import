@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8mas73sm0arr"
-path="res://.godot/imported/badpiggies-manface (2).png-c5de89be41bbb8dae4d9b9cec036aeae.ctex"
+uid="uid://b36tw4q2lvdlr"
+path="res://.godot/imported/image (2) (1)-1.png.png-ad50e5dcfe0c1bd2dcc5952690b9b60e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/badpiggies-manface (2).png"
-dest_files=["res://.godot/imported/badpiggies-manface (2).png-c5de89be41bbb8dae4d9b9cec036aeae.ctex"]
+source_file="res://assets/image (2) (1)-1.png.png"
+dest_files=["res://.godot/imported/image (2) (1)-1.png.png-ad50e5dcfe0c1bd2dcc5952690b9b60e.ctex"]
 
 [params]
 
