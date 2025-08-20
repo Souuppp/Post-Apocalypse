@@ -153,7 +153,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Run",
-"speed": 10.0
+"speed": 15.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_l4htb"]
@@ -167,8 +167,8 @@ script = ExtResource("1_v0iea")
 texture_filter = 1
 scale = Vector2(0.223375, 0.205755)
 sprite_frames = SubResource("SpriteFrames_25hyu")
-animation = &"Jump_Down"
-frame_progress = 0.249996
+animation = &"Run"
+frame_progress = 0.156046
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_l4htb")
