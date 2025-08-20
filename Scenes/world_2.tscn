@@ -1976,6 +1976,7 @@ motion_mirroring = Vector2(1080, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
 texture_filter = 1
+position = Vector2(2.85714, -2.14286)
 texture = ExtResource("8_hpuos")
 centered = false
 
@@ -2002,3 +2003,19 @@ shape = SubResource("RectangleShape2D_hpuos")
 
 [node name="Door" parent="." instance=ExtResource("6_4i21e")]
 position = Vector2(-38, 127)
+<<<<<<< Updated upstream
+=======
+
+[node name="Telepuerte" parent="." instance=ExtResource("7_6uuwl")]
+position = Vector2(-160, 532)
+collision_layer = 6
+collision_mask = 6
+
+[node name="Telepuerte2" parent="." instance=ExtResource("7_6uuwl")]
+position = Vector2(1254, 36)
+collision_layer = 6
+collision_mask = 6
+
+[node name="Player2" parent="." instance=ExtResource("4_6uuwl")]
+position = Vector2(81, 607)
+>>>>>>> Stashed changes

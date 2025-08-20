@@ -1,6 +1,6 @@
 [gd_scene load_steps=21 format=3 uid="uid://dfhq5urolj1ou"]
 
-[ext_resource type="Script" path="res://Scripts/player.gd" id="1_v0iea"]
+[ext_resource type="Script" uid="uid://c1fkgcny2n4xe" path="res://Scripts/player.gd" id="1_v0iea"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v0iea"]
 load_path = "res://.godot/imported/image (2) (1).png-f97e373fe90cdfbbd113d9aa85d4c776.ctex"
@@ -106,7 +106,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Jump_Down",
-"speed": 10.0
+"speed": 30.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -162,7 +162,7 @@ script = ExtResource("1_v0iea")
 texture_filter = 1
 scale = Vector2(0.223375, 0.205755)
 sprite_frames = SubResource("SpriteFrames_25hyu")
-animation = &"Idle"
+animation = &"Jump_Down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_l4htb")
