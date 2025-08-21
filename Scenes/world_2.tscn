@@ -1902,6 +1902,7 @@ tile_set = SubResource("TileSet_hpuos")
 
 [node name="Player" parent="." instance=ExtResource("4_6uuwl")]
 position = Vector2(63, 607)
+collision_mask = 134
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scale = Vector2(1.4, 1.4)
