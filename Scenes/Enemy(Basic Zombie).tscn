@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://2ya5pgngu7ia"]
+[gd_scene load_steps=38 format=3 uid="uid://2ya5pgngu7ia"]
 
 [ext_resource type="Texture2D" uid="uid://bj0f1ckvdvxjk" path="res://assets/zombie-attack-1-outline.png" id="1_k8ekl"]
 [ext_resource type="Texture2D" uid="uid://b14xply2cncf3" path="res://assets/zombie-death-1-outline.png" id="2_jy0o0"]
@@ -33,6 +33,12 @@ func _physics_process(delta: float) -> void:
 
 func _on_timer_timeout() -> void:
 	direction = -direction
+
+
+func _on_detection_area_body_entered(body: Node2D) -> void:
+	if body is Player:
+		$AnimatedSprite2D.play(\"Attack\")
+		body.die()
 "
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7ilkn"]
@@ -261,10 +267,17 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_k8ekl"]
+radius = 9.5
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bvp3m"]
+radius = 8.0
+height = 22.1106
 
 [node name="Zombie(Basic)" type="CharacterBody2D" groups=["Hurt"]]
 texture_filter = 1
+collision_layer = 64
+collision_mask = 134
 script = SubResource("GDScript_k8ekl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -272,9 +285,16 @@ scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_s3m5j")
 animation = &"Attack"
 autoplay = "Walking"
+frame_progress = 0.771734
+
+[node name="Detection Area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detection Area"]
+position = Vector2(-0.5, 4)
+shape = SubResource("CapsuleShape2D_k8ekl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 4)
+position = Vector2(0, 8)
 scale = Vector2(1, 0.995)
 shape = SubResource("CapsuleShape2D_bvp3m")
 
@@ -282,4 +302,5 @@ shape = SubResource("CapsuleShape2D_bvp3m")
 wait_time = 2.0
 autostart = true
 
+[connection signal="body_entered" from="Detection Area" to="." method="_on_detection_area_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

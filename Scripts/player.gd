@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+class_name Player
 const SPEED := 200.0
 const JUMP_FORCE := -355.0
 const GRAVITY := 1000.0
@@ -79,5 +79,9 @@ func pickup_or_drop() -> void:
 				held_object.position = Vector2(0, -16)
 				break
 
-func take_damage() -> void:
+func die() -> void:
+	set_process(false)
+	set_physics_process(false)
 	sprite.play("Hurt")
+	await sprite.animation_finished
+	print("DO SOMETHING HERE")

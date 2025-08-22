@@ -1054,7 +1054,6 @@ tile_set = SubResource("TileSet_3wrru")
 
 [node name="Player" parent="." instance=ExtResource("4_22dce")]
 position = Vector2(97, 603)
-collision_mask = 134
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scale = Vector2(1.4, 1.4)
