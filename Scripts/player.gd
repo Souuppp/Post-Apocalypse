@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+class_name Player
 const SPEED := 200.0
 const JUMP_FORCE := -355.0
 const GRAVITY := 1000.0
@@ -11,7 +11,11 @@ var held_object: Node2D = null
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var pickup_area: Area2D = $PickupArea
-
+@onready var score_label: RichTextLabel = $Camera2D/RichTextLabel
+var score =0
+func add_score(value):
+	score+=1
+	score_label.text = str(score)
 func _physics_process(delta: float) -> void:
 	handle_gravity(delta)
 	handle_input()

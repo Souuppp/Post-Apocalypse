@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwwqssyp5kauw"]
+
+[ext_resource type="Texture2D" uid="uid://dxn1lj75d8jpk" path="res://Sounds/32-326476_itemenvelope-minecraft-envelope.png" id="1_ypo5t"]
+[ext_resource type="Script" uid="uid://dfndvrrvd705a" path="res://sprite_2d.gd" id="2_6rfa3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s2cam"]
+size = Vector2(554, 356)
+
+[node name="Letta" type="Sprite2D"]
+position = Vector2(0, -4.76837e-07)
+scale = Vector2(0.0249554, 0.0249307)
+texture = ExtResource("1_ypo5t")
+script = ExtResource("2_6rfa3")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(3, -1)
+collision_layer = 6
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-3, 1.00002)
+shape = SubResource("RectangleShape2D_s2cam")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

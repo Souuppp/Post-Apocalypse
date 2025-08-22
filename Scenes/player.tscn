@@ -1,8 +1,9 @@
-[gd_scene load_steps=23 format=3 uid="uid://dfhq5urolj1ou"]
+[gd_scene load_steps=24 format=3 uid="uid://dfhq5urolj1ou"]
 
 [ext_resource type="Script" uid="uid://c1fkgcny2n4xe" path="res://Scripts/player.gd" id="1_v0iea"]
 [ext_resource type="Texture2D" uid="uid://dh3oy0hkcvdao" path="res://assets/image (2) (1).png" id="2_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://b36tw4q2lvdlr" path="res://assets/image (2) (1)-1.png.png" id="3_6t5aa"]
+[ext_resource type="Script" uid="uid://s7mbvfh261my" path="res://Scenes/rich_text_label.gd" id="4_vgqql"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v0iea"]
 
@@ -177,3 +178,15 @@ shape = SubResource("CapsuleShape2D_l4htb")
 position = Vector2(0, -77.435)
 zoom = Vector2(2.5, 2.5)
 position_smoothing_enabled = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Camera2D"]
+texture_filter = 1
+offset_left = -6.0
+offset_top = 35.435
+offset_right = 24.0
+offset_bottom = 59.435
+text = "0"
+scroll_following = true
+script = ExtResource("4_vgqql")
+
+[connection signal="editor_state_changed" from="Camera2D/RichTextLabel" to="." method="_on_rich_text_label_editor_state_changed"]

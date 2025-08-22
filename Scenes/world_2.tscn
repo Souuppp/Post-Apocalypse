@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://27pgwt4t8jt7"]
+[gd_scene load_steps=28 format=4 uid="uid://27pgwt4t8jt7"]
 
 [ext_resource type="Texture2D" uid="uid://bskyhvs366aax" path="res://assets/Sidescroller Shooter - Central City/Assets/Buildings.png" id="1_wa2kw"]
 [ext_resource type="Texture2D" uid="uid://jckduuxb3hvp" path="res://assets/Sidescroller Shooter - Central City/Assets/Props-01.png" id="2_ico85"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dfhq5urolj1ou" path="res://Scenes/player.tscn" id="4_6uuwl"]
 [ext_resource type="Texture2D" uid="uid://bgcyv64bgqtp6" path="res://assets/WCP_1.png" id="5_tmly8"]
 [ext_resource type="PackedScene" uid="uid://c7lcl05yyn2b2" path="res://Scenes/door2.tscn" id="6_4i21e"]
+[ext_resource type="PackedScene" uid="uid://cwwqssyp5kauw" path="res://Scenes/letta.tscn" id="6_hpuos"]
 [ext_resource type="Texture2D" uid="uid://cufctmlmquyve" path="res://assets/WCP_2.png" id="6_wa2kw"]
 [ext_resource type="Texture2D" uid="uid://cwpt45ckeb20q" path="res://assets/WCP_3.png" id="7_ico85"]
 [ext_resource type="Texture2D" uid="uid://33sykye3seyd" path="res://assets/WCP_5.png" id="8_hpuos"]
@@ -1968,3 +1969,33 @@ position = Vector2(-38, 127)
 
 [node name="Telepuerte" parent="." instance=ExtResource("10_ico85")]
 position = Vector2(-157, 517)
+
+[node name="Letta" parent="." instance=ExtResource("6_hpuos")]
+position = Vector2(295, 415)
+
+[node name="Letta2" parent="." instance=ExtResource("6_hpuos")]
+position = Vector2(317, 415)
+
+[node name="Letta3" parent="." instance=ExtResource("6_hpuos")]
+position = Vector2(339, 415)
+
+[node name="Letta4" parent="." instance=ExtResource("6_hpuos")]
+position = Vector2(361, 415)
+
+[node name="Letta5" parent="." instance=ExtResource("6_hpuos")]
+position = Vector2(384, 415)
+
+[node name="Letta6" parent="." instance=ExtResource("6_hpuos")]
+position = Vector2(579, 366)
+
+[node name="Letta7" parent="." instance=ExtResource("6_hpuos")]
+position = Vector2(867, 367)
+
+[node name="Letta8" parent="." instance=ExtResource("6_hpuos")]
+position = Vector2(532.714, 164.5)
+
+[node name="Letta9" parent="." instance=ExtResource("6_hpuos")]
+position = Vector2(170, 262)
+
+[node name="Letta10" parent="." instance=ExtResource("6_hpuos")]
+position = Vector2(202, 263)

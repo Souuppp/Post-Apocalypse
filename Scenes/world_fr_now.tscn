@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://dqttwp2j1j0p6"]
+[gd_scene load_steps=22 format=4 uid="uid://dqttwp2j1j0p6"]
 
 [ext_resource type="Texture2D" uid="uid://bskyhvs366aax" path="res://assets/Sidescroller Shooter - Central City/Assets/Buildings.png" id="1_0d3u0"]
 [ext_resource type="Texture2D" uid="uid://jckduuxb3hvp" path="res://assets/Sidescroller Shooter - Central City/Assets/Props-01.png" id="2_qdm33"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://2ya5pgngu7ia" path="res://Scenes/Enemy(Basic Zombie).tscn" id="7_eqfkm"]
 [ext_resource type="Texture2D" uid="uid://33sykye3seyd" path="res://assets/WCP_5.png" id="8_mqu4y"]
 [ext_resource type="PackedScene" uid="uid://b5ud8ilh0kahb" path="res://Scenes/door.tscn" id="9_b4gm2"]
+[ext_resource type="PackedScene" uid="uid://cwwqssyp5kauw" path="res://Scenes/letta.tscn" id="11_jttkf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6kl5w"]
 texture = ExtResource("1_0d3u0")
@@ -1068,6 +1069,7 @@ motion_mirroring = Vector2(1080, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 texture_filter = 1
+position = Vector2(1.42857, 3.57143)
 texture = ExtResource("5_ywhmv")
 centered = false
 
@@ -1078,6 +1080,7 @@ motion_mirroring = Vector2(1080, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
 texture_filter = 1
+position = Vector2(-30.7143, 0)
 texture = ExtResource("6_ghpm4")
 centered = false
 
@@ -1115,3 +1118,36 @@ position = Vector2(1087, 161)
 
 [node name="Zombie(Basic)" parent="." instance=ExtResource("7_eqfkm")]
 position = Vector2(30, 512)
+
+[node name="Letta" parent="." instance=ExtResource("11_jttkf")]
+position = Vector2(861, 293)
+
+[node name="Letta2" parent="." instance=ExtResource("11_jttkf")]
+position = Vector2(106, 517)
+
+[node name="Letta3" parent="." instance=ExtResource("11_jttkf")]
+position = Vector2(73, 517)
+
+[node name="Letta4" parent="." instance=ExtResource("11_jttkf")]
+position = Vector2(484, 431)
+
+[node name="Letta5" parent="." instance=ExtResource("11_jttkf")]
+position = Vector2(483, 349)
+
+[node name="Letta6" parent="." instance=ExtResource("11_jttkf")]
+position = Vector2(64, 264)
+
+[node name="Letta7" parent="." instance=ExtResource("11_jttkf")]
+position = Vector2(145, 265)
+scale = Vector2(0.0249554, 0.0236302)
+
+[node name="Letta8" parent="." instance=ExtResource("11_jttkf")]
+position = Vector2(138, 517)
+scale = Vector2(0.0252073, 0.0242474)
+
+[node name="Letta9" parent="." instance=ExtResource("11_jttkf")]
+position = Vector2(400, 349)
+
+[node name="Letta10" parent="." instance=ExtResource("11_jttkf")]
+position = Vector2(439, 349)
+scale = Vector2(0.0237031, 0.0256233)
