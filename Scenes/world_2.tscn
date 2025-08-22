@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=4 uid="uid://27pgwt4t8jt7"]
+[gd_scene load_steps=27 format=4 uid="uid://27pgwt4t8jt7"]
 
 [ext_resource type="Texture2D" uid="uid://bskyhvs366aax" path="res://assets/Sidescroller Shooter - Central City/Assets/Buildings.png" id="1_wa2kw"]
 [ext_resource type="Texture2D" uid="uid://jckduuxb3hvp" path="res://assets/Sidescroller Shooter - Central City/Assets/Props-01.png" id="2_ico85"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cufctmlmquyve" path="res://assets/WCP_2.png" id="6_wa2kw"]
 [ext_resource type="Texture2D" uid="uid://cwpt45ckeb20q" path="res://assets/WCP_3.png" id="7_ico85"]
 [ext_resource type="Texture2D" uid="uid://33sykye3seyd" path="res://assets/WCP_5.png" id="8_hpuos"]
+[ext_resource type="PackedScene" uid="uid://bgt7ed4oawbbx" path="res://Scenes/telepuerte.tscn" id="10_ico85"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rcwnu"]
 texture = ExtResource("1_wa2kw")
@@ -1868,12 +1869,6 @@ sources/0 = SubResource("TileSetAtlasSource_tmly8")
 sources/1 = SubResource("TileSetAtlasSource_wa2kw")
 sources/2 = SubResource("TileSetAtlasSource_ico85")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ico85"]
-size = Vector2(11.5, 912.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hpuos"]
-size = Vector2(14, 811.5)
-
 [node name="World2" type="Node2D"]
 
 [node name="TileMap" type="Node2D" parent="."]
@@ -1968,17 +1963,8 @@ motion_mirroring = Vector2(1080, 0)
 texture_filter = 1
 centered = false
 
-[node name="cOLLISIONSHAPES" type="Area2D" parent="."]
-collision_layer = 6
-collision_mask = 6
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="cOLLISIONSHAPES"]
-position = Vector2(-167.25, 202.25)
-shape = SubResource("RectangleShape2D_ico85")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="cOLLISIONSHAPES"]
-position = Vector2(1268, 214.75)
-shape = SubResource("RectangleShape2D_hpuos")
-
 [node name="Door" parent="." instance=ExtResource("6_4i21e")]
 position = Vector2(-38, 127)
+
+[node name="Telepuerte" parent="." instance=ExtResource("10_ico85")]
+position = Vector2(-157, 517)

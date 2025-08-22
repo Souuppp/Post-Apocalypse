@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://dsqhw66ub80oc"]
+[gd_scene load_steps=3 format=3 uid="uid://bgt7ed4oawbbx"]
 
-[ext_resource type="Script" uid="uid://c8lqrsu0p8hxi" path="res://telepuerte.gd" id="1_3mc3i"]
+[ext_resource type="Script" path="res://telepuerte.gd" id="1_3mc3i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6khx6"]
 size = Vector2(10, 10)
 
 [node name="Telepuerte" type="Area2D"]
+collision_layer = 6
+collision_mask = 6
 script = ExtResource("1_3mc3i")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
