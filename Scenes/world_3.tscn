@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://d1h8lbfiu826w"]
+[gd_scene load_steps=14 format=4 uid="uid://d1h8lbfiu826w"]
 
 [ext_resource type="Texture2D" uid="uid://bskyhvs366aax" path="res://assets/Sidescroller Shooter - Central City/Assets/Buildings.png" id="1_5hk8i"]
 [ext_resource type="Texture2D" uid="uid://jckduuxb3hvp" path="res://assets/Sidescroller Shooter - Central City/Assets/Props-01.png" id="2_bcngy"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cufctmlmquyve" path="res://assets/WCP_2.png" id="6_gpgqw"]
 [ext_resource type="Texture2D" uid="uid://cwpt45ckeb20q" path="res://assets/WCP_3.png" id="7_05nom"]
 [ext_resource type="Texture2D" uid="uid://33sykye3seyd" path="res://assets/WCP_5.png" id="8_kyxo2"]
+[ext_resource type="PackedScene" uid="uid://cwwqssyp5kauw" path="res://Scenes/letta.tscn" id="9_gpgqw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_74n6h"]
 texture = ExtResource("1_5hk8i")
@@ -568,6 +569,7 @@ motion_mirroring = Vector2(1080, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
 texture_filter = 1
+position = Vector2(0, 0.714286)
 texture = ExtResource("6_gpgqw")
 centered = false
 
@@ -599,3 +601,20 @@ motion_mirroring = Vector2(1080, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
 texture_filter = 1
 centered = false
+
+[node name="Letta3" parent="." instance=ExtResource("9_gpgqw")]
+position = Vector2(409, 322)
+
+[node name="Letta4" parent="." instance=ExtResource("9_gpgqw")]
+position = Vector2(303, 323)
+scale = Vector2(0.0249554, 0.0260285)
+
+[node name="Letta5" parent="." instance=ExtResource("9_gpgqw")]
+position = Vector2(517, 323)
+scale = Vector2(0.0248825, 0.0247668)
+
+[node name="Letta6" parent="." instance=ExtResource("9_gpgqw")]
+position = Vector2(357, 323)
+
+[node name="Letta7" parent="." instance=ExtResource("9_gpgqw")]
+position = Vector2(466, 323)
