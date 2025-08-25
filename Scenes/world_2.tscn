@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=4 uid="uid://27pgwt4t8jt7"]
+[gd_scene load_steps=29 format=4 uid="uid://27pgwt4t8jt7"]
 
 [ext_resource type="Texture2D" uid="uid://bskyhvs366aax" path="res://assets/Sidescroller Shooter - Central City/Assets/Buildings.png" id="1_wa2kw"]
 [ext_resource type="Texture2D" uid="uid://jckduuxb3hvp" path="res://assets/Sidescroller Shooter - Central City/Assets/Props-01.png" id="2_ico85"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cufctmlmquyve" path="res://assets/WCP_2.png" id="6_wa2kw"]
 [ext_resource type="Texture2D" uid="uid://cwpt45ckeb20q" path="res://assets/WCP_3.png" id="7_ico85"]
 [ext_resource type="Texture2D" uid="uid://33sykye3seyd" path="res://assets/WCP_5.png" id="8_hpuos"]
+[ext_resource type="PackedScene" uid="uid://2ya5pgngu7ia" path="res://Scenes/Enemy(Basic Zombie).tscn" id="10_ico85"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rcwnu"]
 texture = ExtResource("1_wa2kw")
@@ -1982,3 +1983,9 @@ shape = SubResource("RectangleShape2D_hpuos")
 
 [node name="Door" parent="." instance=ExtResource("6_4i21e")]
 position = Vector2(-38, 127)
+
+[node name="Zombie(Basic)" parent="." instance=ExtResource("10_ico85")]
+position = Vector2(376, 413)
+
+[node name="Zombie(Basic)2" parent="." instance=ExtResource("10_ico85")]
+position = Vector2(-15, 253)

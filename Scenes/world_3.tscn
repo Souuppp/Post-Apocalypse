@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://d1h8lbfiu826w"]
+[gd_scene load_steps=14 format=4 uid="uid://d1h8lbfiu826w"]
 
 [ext_resource type="Texture2D" uid="uid://bskyhvs366aax" path="res://assets/Sidescroller Shooter - Central City/Assets/Buildings.png" id="1_5hk8i"]
 [ext_resource type="Texture2D" uid="uid://jckduuxb3hvp" path="res://assets/Sidescroller Shooter - Central City/Assets/Props-01.png" id="2_bcngy"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cufctmlmquyve" path="res://assets/WCP_2.png" id="6_gpgqw"]
 [ext_resource type="Texture2D" uid="uid://cwpt45ckeb20q" path="res://assets/WCP_3.png" id="7_05nom"]
 [ext_resource type="Texture2D" uid="uid://33sykye3seyd" path="res://assets/WCP_5.png" id="8_kyxo2"]
+[ext_resource type="PackedScene" uid="uid://2ya5pgngu7ia" path="res://Scenes/Enemy(Basic Zombie).tscn" id="9_gpgqw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_74n6h"]
 texture = ExtResource("1_5hk8i")
@@ -544,7 +545,6 @@ tile_set = SubResource("TileSet_gpgqw")
 
 [node name="Player" parent="." instance=ExtResource("4_bcngy")]
 position = Vector2(241, 625)
-collision_mask = 134
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scale = Vector2(1.4, 1.4)
@@ -599,3 +599,6 @@ motion_mirroring = Vector2(1080, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
 texture_filter = 1
 centered = false
+
+[node name="Zombie(Basic)" parent="." instance=ExtResource("9_gpgqw")]
+position = Vector2(454, 317)

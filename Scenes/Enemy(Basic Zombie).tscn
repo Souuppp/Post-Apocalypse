@@ -39,6 +39,7 @@ func _on_detection_area_body_entered(body: Node2D) -> void:
 	if body is Player:
 		$AnimatedSprite2D.play(\"Attack\")
 		body.die()
+		
 "
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7ilkn"]
@@ -283,9 +284,8 @@ script = SubResource("GDScript_k8ekl")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_s3m5j")
-animation = &"Attack"
+animation = &"Idle"
 autoplay = "Walking"
-frame_progress = 0.771734
 
 [node name="Detection Area" type="Area2D" parent="."]
 

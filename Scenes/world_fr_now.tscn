@@ -1114,3 +1114,9 @@ position = Vector2(1087, 161)
 
 [node name="Zombie(Basic)" parent="." instance=ExtResource("7_eqfkm")]
 position = Vector2(30, 512)
+
+[node name="Zombie(Basic)2" parent="." instance=ExtResource("7_eqfkm")]
+position = Vector2(806, 301)
+
+[node name="Zombie(Basic)3" parent="." instance=ExtResource("7_eqfkm")]
+position = Vector2(473, 349)
