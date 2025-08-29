@@ -39,19 +39,22 @@ func _on_timer_timeout() -> void:
 func _on_detection_area_body_entered(body: Node2D) -> void:
 	if body is Player:
 		$AnimatedSprite2D.play(\"Attack\")
-		body.die()
 		await $AnimatedSprite2D.animation_finished
+		body.die()
 		$AnimatedSprite2D.play(\"Walking\")
+	
+		
+func death():
+	queue_free()
+		
+
+
 		
 "
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fhi8o"]
 atlas = ExtResource("1_k8ekl")
 region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lith0"]
-atlas = ExtResource("1_k8ekl")
-region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o4vox"]
 atlas = ExtResource("1_k8ekl")
@@ -160,9 +163,6 @@ animations = [{
 "texture": SubResource("AtlasTexture_fhi8o")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_lith0")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_o4vox")
 }, {
 "duration": 1.0,
@@ -259,6 +259,9 @@ radius = 9.5
 radius = 8.0
 height = 22.1106
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_5pud6"]
+radius = 5.0
+
 [node name="Zombie(Basic)" type="CharacterBody2D" groups=["Hurt"]]
 texture_filter = 1
 collision_layer = 64
@@ -282,9 +285,16 @@ position = Vector2(0, 8)
 scale = Vector2(1, 0.995)
 shape = SubResource("CapsuleShape2D_bvp3m")
 
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -8)
+shape = SubResource("CircleShape2D_5pud6")
+
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
 autostart = true
 
 [connection signal="body_entered" from="Detection Area" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

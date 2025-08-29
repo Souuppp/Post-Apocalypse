@@ -85,3 +85,4 @@ func die() -> void:
 	sprite.play("Hurt")
 	await sprite.animation_finished
 	print("DO SOMETHING HERE")
+	

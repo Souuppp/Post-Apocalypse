@@ -176,3 +176,5 @@ shape = SubResource("CapsuleShape2D_l4htb")
 position = Vector2(0, -77.435)
 zoom = Vector2(2.5, 2.5)
 position_smoothing_enabled = true
+
+[node name="EnemyChecker" type="RayCast2D" parent="."]
