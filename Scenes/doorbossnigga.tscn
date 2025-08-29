@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://b5ud8ilh0kahb"]
+[gd_scene load_steps=4 format=3 uid="uid://bbfsebo07n318"]
 
-[ext_resource type="Texture2D" uid="uid://cw1wrbg8fun05" path="res://assets/New Piskel-1.png (2).png" id="2_fahql"]
-[ext_resource type="Script" uid="uid://bbml7cfyxp6vo" path="res://Scripts/area_2d.gd" id="3_fahql"]
+[ext_resource type="Script" uid="uid://54k4p0gy3ah6" path="res://Scenes/doorbossnigga.gd" id="1_opejt"]
+[ext_resource type="Texture2D" uid="uid://cw1wrbg8fun05" path="res://assets/New Piskel-1.png (2).png" id="2_hdnrb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ab4ky"]
 size = Vector2(17, 31)
@@ -11,7 +11,7 @@ light_mask = 128
 visibility_layer = 128
 collision_layer = 134
 collision_mask = 134
-script = ExtResource("3_fahql")
+script = ExtResource("1_opejt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 light_mask = 6
@@ -23,6 +23,6 @@ shape = SubResource("RectangleShape2D_ab4ky")
 [node name="NewPiskel-1_png(2)" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(0, 1)
-texture = ExtResource("2_fahql")
+texture = ExtResource("2_hdnrb")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

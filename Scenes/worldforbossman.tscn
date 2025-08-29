@@ -1,19 +1,19 @@
-[gd_scene load_steps=22 format=4 uid="uid://dqttwp2j1j0p6"]
+[gd_scene load_steps=22 format=4 uid="uid://cuc4cqpsig4u1"]
 
-[ext_resource type="Texture2D" uid="uid://bskyhvs366aax" path="res://assets/Sidescroller Shooter - Central City/Assets/Buildings.png" id="1_0d3u0"]
-[ext_resource type="Texture2D" uid="uid://jckduuxb3hvp" path="res://assets/Sidescroller Shooter - Central City/Assets/Props-01.png" id="2_qdm33"]
-[ext_resource type="Texture2D" uid="uid://ce03s6yvfrt4y" path="res://assets/Sidescroller Shooter - Central City/Assets/Tiles.png" id="3_qdm33"]
-[ext_resource type="PackedScene" uid="uid://dfhq5urolj1ou" path="res://Scenes/player.tscn" id="4_22dce"]
-[ext_resource type="Texture2D" uid="uid://bgcyv64bgqtp6" path="res://assets/WCP_1.png" id="5_ywhmv"]
-[ext_resource type="Texture2D" uid="uid://cufctmlmquyve" path="res://assets/WCP_2.png" id="6_ghpm4"]
-[ext_resource type="Texture2D" uid="uid://cwpt45ckeb20q" path="res://assets/WCP_3.png" id="7_an4fb"]
-[ext_resource type="PackedScene" uid="uid://2ya5pgngu7ia" path="res://Scenes/Enemy(Basic Zombie).tscn" id="7_eqfkm"]
-[ext_resource type="Texture2D" uid="uid://33sykye3seyd" path="res://assets/WCP_5.png" id="8_mqu4y"]
-[ext_resource type="PackedScene" uid="uid://b5ud8ilh0kahb" path="res://Scenes/door.tscn" id="9_b4gm2"]
-[ext_resource type="PackedScene" uid="uid://e0fdvpu8ol2k" path="res://Scenes/letter_post.tscn" id="11_jttkf"]
+[ext_resource type="Texture2D" uid="uid://bskyhvs366aax" path="res://assets/Sidescroller Shooter - Central City/Assets/Buildings.png" id="1_pxm1l"]
+[ext_resource type="Texture2D" uid="uid://jckduuxb3hvp" path="res://assets/Sidescroller Shooter - Central City/Assets/Props-01.png" id="2_psnv0"]
+[ext_resource type="Texture2D" uid="uid://ce03s6yvfrt4y" path="res://assets/Sidescroller Shooter - Central City/Assets/Tiles.png" id="3_8fspp"]
+[ext_resource type="PackedScene" uid="uid://dfhq5urolj1ou" path="res://Scenes/player.tscn" id="4_ttd4p"]
+[ext_resource type="Texture2D" uid="uid://bgcyv64bgqtp6" path="res://assets/WCP_1.png" id="5_86fp0"]
+[ext_resource type="Texture2D" uid="uid://cufctmlmquyve" path="res://assets/WCP_2.png" id="6_w878o"]
+[ext_resource type="Texture2D" uid="uid://cwpt45ckeb20q" path="res://assets/WCP_3.png" id="7_po0ae"]
+[ext_resource type="Texture2D" uid="uid://33sykye3seyd" path="res://assets/WCP_5.png" id="8_pfcg7"]
+[ext_resource type="PackedScene" uid="uid://b5ud8ilh0kahb" path="res://Scenes/door.tscn" id="9_g46k3"]
+[ext_resource type="PackedScene" uid="uid://2ya5pgngu7ia" path="res://Scenes/Enemy(Basic Zombie).tscn" id="10_sppgo"]
+[ext_resource type="PackedScene" uid="uid://e0fdvpu8ol2k" path="res://Scenes/letter_post.tscn" id="11_yjjvt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6kl5w"]
-texture = ExtResource("1_0d3u0")
+texture = ExtResource("1_pxm1l")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -328,7 +328,7 @@ physics_layer_0/collision_mask = 7
 sources/0 = SubResource("TileSetAtlasSource_6kl5w")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0d3u0"]
-texture = ExtResource("1_0d3u0")
+texture = ExtResource("1_pxm1l")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -641,7 +641,7 @@ texture = ExtResource("1_0d3u0")
 2:14/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qdm33"]
-texture = ExtResource("2_qdm33")
+texture = ExtResource("2_psnv0")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -756,7 +756,7 @@ texture = ExtResource("2_qdm33")
 4:13/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jttkf"]
-texture = ExtResource("3_qdm33")
+texture = ExtResource("3_8fspp")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -824,7 +824,7 @@ sources/1 = SubResource("TileSetAtlasSource_qdm33")
 sources/2 = SubResource("TileSetAtlasSource_jttkf")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ywhmv"]
-texture = ExtResource("2_qdm33")
+texture = ExtResource("2_psnv0")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -929,7 +929,7 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_ywhmv")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mqu4y"]
-texture = ExtResource("2_qdm33")
+texture = ExtResource("2_psnv0")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1057,7 +1057,7 @@ tile_set = SubResource("TileSet_ulpju")
 tile_map_data = PackedByteArray("AAAZACUAAQADAAAAAAAZACYAAQADAAEAAAAaACUAAQAEAAAAAAAaACYAAQAEAAEAAAAYACYAAQACAAQAAAAcACYAAQACAAQAAAATACYAAQADAAEAAAATACUAAQADAAAAAAAUACUAAQAEAAAAAAAUACYAAQAEAAEAAAA=")
 tile_set = SubResource("TileSet_3wrru")
 
-[node name="Player" parent="." instance=ExtResource("4_22dce")]
+[node name="Player" parent="." instance=ExtResource("4_ttd4p")]
 position = Vector2(97, 603)
 collision_mask = 134
 
@@ -1074,7 +1074,7 @@ motion_mirroring = Vector2(1080, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 texture_filter = 1
 position = Vector2(17.8571, -8.57143)
-texture = ExtResource("5_ywhmv")
+texture = ExtResource("5_86fp0")
 centered = false
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -1084,7 +1084,7 @@ motion_mirroring = Vector2(1080, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
 texture_filter = 1
-texture = ExtResource("6_ghpm4")
+texture = ExtResource("6_w878o")
 centered = false
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -1094,7 +1094,7 @@ motion_mirroring = Vector2(1080, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
 texture_filter = 1
-texture = ExtResource("7_an4fb")
+texture = ExtResource("7_po0ae")
 centered = false
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -1105,7 +1105,7 @@ motion_mirroring = Vector2(1080, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
 texture_filter = 1
 position = Vector2(3.57143, 0.714286)
-texture = ExtResource("8_mqu4y")
+texture = ExtResource("8_pfcg7")
 centered = false
 
 [node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -1117,38 +1117,38 @@ motion_mirroring = Vector2(1080, 0)
 texture_filter = 1
 centered = false
 
-[node name="Door" parent="." instance=ExtResource("9_b4gm2")]
+[node name="Door" parent="." instance=ExtResource("9_g46k3")]
 position = Vector2(1087, 161)
 
-[node name="Zombie(Basic)" parent="." instance=ExtResource("7_eqfkm")]
+[node name="Zombie(Basic)" parent="." instance=ExtResource("10_sppgo")]
 position = Vector2(30, 512)
 
-[node name="Letter_Post" parent="." instance=ExtResource("11_jttkf")]
+[node name="Letter_Post" parent="." instance=ExtResource("11_yjjvt")]
 position = Vector2(199, 603)
 
-[node name="Letter_Post2" parent="." instance=ExtResource("11_jttkf")]
+[node name="Letter_Post2" parent="." instance=ExtResource("11_yjjvt")]
 position = Vector2(234, 603)
 
-[node name="Letter_Post3" parent="." instance=ExtResource("11_jttkf")]
+[node name="Letter_Post3" parent="." instance=ExtResource("11_yjjvt")]
 position = Vector2(269, 603)
 
-[node name="Letter_Post4" parent="." instance=ExtResource("11_jttkf")]
+[node name="Letter_Post4" parent="." instance=ExtResource("11_yjjvt")]
 position = Vector2(306, 603)
 
-[node name="Letter_Post5" parent="." instance=ExtResource("11_jttkf")]
+[node name="Letter_Post5" parent="." instance=ExtResource("11_yjjvt")]
 position = Vector2(738, 298)
 
-[node name="Letter_Post6" parent="." instance=ExtResource("11_jttkf")]
+[node name="Letter_Post6" parent="." instance=ExtResource("11_yjjvt")]
 position = Vector2(768.714, 298.714)
 
-[node name="Letter_Post7" parent="." instance=ExtResource("11_jttkf")]
+[node name="Letter_Post7" parent="." instance=ExtResource("11_yjjvt")]
 position = Vector2(800.857, 298)
 
-[node name="Letter_Post8" parent="." instance=ExtResource("11_jttkf")]
+[node name="Letter_Post8" parent="." instance=ExtResource("11_yjjvt")]
 position = Vector2(832, 298)
 
-[node name="Letter_Post9" parent="." instance=ExtResource("11_jttkf")]
+[node name="Letter_Post9" parent="." instance=ExtResource("11_yjjvt")]
 position = Vector2(864, 298)
 
-[node name="Letter_Post10" parent="." instance=ExtResource("11_jttkf")]
+[node name="Letter_Post10" parent="." instance=ExtResource("11_yjjvt")]
 position = Vector2(895, 298)
